@@ -1,21 +1,29 @@
 package fr.guilloux.foobarqix;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class FooBarQix {
-	
-		
-		public String given(Integer number) {
+	 
+			public static Map<Integer, String> divisibles = new HashMap<>();
+			static {
+				divisibles.put(3, "Foo");
+				divisibles.put(5, "Bar");
+				divisibles.put(7, "Qix");
+				
+				
+			}
 			
 			
-			if (number % 3 == 0 && number == 3) return "FooFoo";
-			if (number % 5 == 0 && number == 5) return "BarBar";
-			if (number % 7 == 0 && number == 7) return "QixQix";
-			
-			if (number % 3 == 0) return "Foo";
-			if (number % 5 == 0) return "Bar";
-			if (number % 7 == 0) return "Qix";
-			return number.toString();
+			public static String given (Integer value) {
+				for (Integer divisible  : divisibles.keySet()) {
+					if(value % divisible == 0) return divisibles.get(divisible);
+					
+				}
+			return value.toString();
 		}
-	}
+}
+
 
 
 
