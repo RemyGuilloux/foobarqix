@@ -14,18 +14,21 @@ public class FooBarQixTest {
 	}
 	
 	@Test
-	public void shouldReturnFooFooWhenOutisDivisibleBy3() {
+	public void shouldReturnFooFooWhenOutisDivisibleBy3andEqual3() {
 		Assert.assertEquals("FooFoo", new FooBarQix().given(3));
 	}
 
 	@Test
-	public void shouldReturnBarBarWhenOutisDivisibleBy5() {
+	public void shouldReturnBarBarWhenOutisDivisibleBy5andEqual5() {
 		Assert.assertEquals("BarBar", new FooBarQix().given(5));
 	}
 	
 	@Test
-	public void shouldReturnBarBarWhenOutisDivisibleBy7() {
+	public void shouldReturnBarBarWhenOutisDivisibleBy7andEqual7() {
 		Assert.assertEquals("QixQix", new FooBarQix().given(7));
 	}
-	
+	@Test
+	public void shouldReturnBarBarWhenOutisDivisibleBy3() {
+		Assert.assertEquals("Foo", new FooBarQix().given(9));
+	}
 }
