@@ -27,20 +27,28 @@ public class FooBarQix {
 					}
 					
 				}
+				String contain = contains(value);
+				if(!"".equals(contain)) return contain;
 				
-				String[] numbers = value.toString().split("");
-				
-				for (String number : numbers) {
-					for(Integer divisible : divisibles.keySet()) {
-						if(number.equals(divisible.toString())) return divisibles.get(divisible);
-					}
-					
-					
-				}
 				if (isDivisible) return result;
-					return value.toString();
+				return value.toString();
+			}
+				
+				private static String contains(Integer value) {
+					String[] numbers = value.toString().split("");
+					
+					for (String number : numbers) {
+						for(Integer divisible : divisibles.keySet()) {
+							if(number.equals(divisible.toString())) return divisibles.get(divisible);
+						}
+						
+						
+					}
+					return "";
+				}
+				
 		}
-}
+
 
 
 
