@@ -55,6 +55,20 @@ public class FooBarQixTest {
 		Assert.assertEquals("BarQix", FooBarQix.given(5*7*4));
 		Assert.assertEquals("FooBarQix", FooBarQix.given(3*5*7*2));
 	}
+	@Test
+	public void shouldReturnCombinationOfContains() {
+		new FooBarQix();
+		Assert.assertEquals("QixFoo", FooBarQix.given(713));
+		Assert.assertEquals("QixBar", FooBarQix.given(7151));
+	}
+	
+	@Test
+	public void shouldReturnCombinationOfdivisbleandcontains() {
+		new FooBarQix();
+		Assert.assertEquals("FooFoo", FooBarQix.given(3));
+		Assert.assertEquals("FooBarBar", FooBarQix.given(15));
+		
+	}
 	
 	
 	

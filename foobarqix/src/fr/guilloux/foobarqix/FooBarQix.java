@@ -15,10 +15,7 @@ public class FooBarQix {
 			
 			public static String given (Integer value) {
 				
-				String contain = contains(value);
-				if(!"".equals(contain)) return contain;
-				
-				String result = divisor(value);
+				String result = divisor(value)+ contains(value);
 				if(!"".equals(result)) return result;
 				
 				
@@ -27,14 +24,14 @@ public class FooBarQix {
 				
 				private static String contains(Integer value) {
 					String[] numbers = value.toString().split("");
-					
+					String result = "";
 					for (String number : numbers) {
 						for(Integer divisible : divisibles.keySet()) {
-							if(number.equals(divisible.toString())) return divisibles.get(divisible);
+							if(number.equals(divisible.toString())) result+= divisibles.get(divisible);
 						}
 						
 					}
-					return "";
+					return result;
 				}
 				
 				private static String divisor(Integer value) {
