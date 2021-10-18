@@ -15,22 +15,13 @@ public class FooBarQix {
 			
 			public static String given (Integer value) {
 				
-				String result = "";
-				boolean isDivisible = false;
-				
-				for (Integer divisible  : divisibles.keySet()) {
-					if(value % divisible == 0) {
-						
-						result += divisibles.get(divisible);
-						isDivisible = true;
-							
-					}
-					
-				}
 				String contain = contains(value);
 				if(!"".equals(contain)) return contain;
 				
-				if (isDivisible) return result;
+				String result = divisor(value);
+				if(!"".equals(result)) return result;
+				
+				
 				return value.toString();
 			}
 				
@@ -42,9 +33,21 @@ public class FooBarQix {
 							if(number.equals(divisible.toString())) return divisibles.get(divisible);
 						}
 						
-						
 					}
 					return "";
+				}
+				
+				private static String divisor(Integer value) {
+					String result = "";
+					for (Integer divisible  : divisibles.keySet()) {
+						if(value % divisible == 0) {
+							
+							result += divisibles.get(divisible);
+							
+						}
+						
+					}
+					return result;
 				}
 				
 		}
