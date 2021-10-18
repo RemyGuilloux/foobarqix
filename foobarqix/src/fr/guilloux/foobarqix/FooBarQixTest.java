@@ -6,7 +6,15 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class FooBarQixTest {
-
+/**
+ * @Test
+	public void shouldReturnCombinationFoo_Bar_Qix() {
+		new FooBarQix();
+		Assert.assertEquals("FooBar", FooBarQix.given(3*5*4));
+		Assert.assertEquals("BarQix", FooBarQix.given(5*7*2));
+		Assert.assertEquals("FooBarQix", FooBarQix.given(3*5*7*2));
+	}
+ */
 	@Test
 	public void shouldReturnInputAsString() {
 		new FooBarQix();
@@ -32,18 +40,23 @@ public class FooBarQixTest {
 		new FooBarQix();
 		Assert.assertEquals("Qix", FooBarQix.given(14));
 	}
-	@Test
-	public void shouldReturnCombinationFoo_Bar_Qix() {
-		new FooBarQix();
-		Assert.assertEquals("FooBar", FooBarQix.given(3*5*4));
-		Assert.assertEquals("BarQix", FooBarQix.given(5*7*2));
-		Assert.assertEquals("FooBarQix", FooBarQix.given(3*5*7*2));
-	}
+	
 	@Test
 	public void shouldReplace3ByFoo() {
 		new FooBarQix();
 		Assert.assertEquals("Foo", FooBarQix.given(13));
 	}
+	@Test
+	public void shouldReplace5ByBar() {
+		new FooBarQix();
+		Assert.assertEquals("Bar", FooBarQix.given(52));
+	}
+	@Test
+	public void shouldReplace7ByQix() {
+		new FooBarQix();
+		Assert.assertEquals("Qix", FooBarQix.given(71));
+	}
+	
 	
 	
 	

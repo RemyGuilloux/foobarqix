@@ -31,9 +31,10 @@ public class FooBarQix {
 				String[] numbers = value.toString().split("");
 				
 				for (String number : numbers) {
+					for(Integer divisible : divisibles.keySet()) {
+						if(number.equals(divisible.toString())) return divisibles.get(divisible);
+					}
 					
-					if(number.equals("3"))
-						return "Foo";
 					
 				}
 				if (isDivisible) return result;
