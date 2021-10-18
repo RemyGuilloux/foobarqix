@@ -22,4 +22,10 @@ public class FooBarQixTest {
 	public void shouldReturnBarBarWhenOutisDivisibleBy5() {
 		Assert.assertEquals("BarBar", new FooBarQix().given(5));
 	}
+	
+	@Test
+	public void shouldReturnBarBarWhenOutisDivisibleBy7() {
+		Assert.assertEquals("QixQix", new FooBarQix().given(7));
+	}
+	
 }
