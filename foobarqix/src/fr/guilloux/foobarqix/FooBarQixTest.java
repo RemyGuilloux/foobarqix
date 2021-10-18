@@ -32,6 +32,14 @@ public class FooBarQixTest {
 		new FooBarQix();
 		Assert.assertEquals("Qix", FooBarQix.given(14));
 	}
+	@Test
+	public void shouldReturnCombinationFoo_Bar_Qix() {
+		new FooBarQix();
+		Assert.assertEquals("FooBar", FooBarQix.given(3*5));
+		Assert.assertEquals("BarQix", FooBarQix.given(5*7));
+		Assert.assertEquals("FooBarQix", FooBarQix.given(3*5*7));
+	}
+	
 	
 
 }

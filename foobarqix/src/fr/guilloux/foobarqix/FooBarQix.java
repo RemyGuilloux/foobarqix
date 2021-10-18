@@ -11,16 +11,24 @@ public class FooBarQix {
 				divisibles.put(5, "Bar");
 				divisibles.put(7, "Qix");
 				
-				
 			}
 			
-			
 			public static String given (Integer value) {
+				
+				String result = "";
+				boolean isDivisible = false;
+				
 				for (Integer divisible  : divisibles.keySet()) {
-					if(value % divisible == 0) return divisibles.get(divisible);
+					if(value % divisible == 0) {
+						
+						result += divisibles.get(divisible);
+						isDivisible = true;
+							
+					}
 					
 				}
-			return value.toString();
+				if (isDivisible) return result;
+					return value.toString();
 		}
 }
 
