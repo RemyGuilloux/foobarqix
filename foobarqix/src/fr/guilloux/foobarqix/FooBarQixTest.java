@@ -35,9 +35,9 @@ public class FooBarQixTest {
 	@Test
 	public void shouldReturnCombinationFoo_Bar_Qix() {
 		new FooBarQix();
-		Assert.assertEquals("FooBar", FooBarQix.given(3*5));
-		Assert.assertEquals("BarQix", FooBarQix.given(5*7));
-		Assert.assertEquals("FooBarQix", FooBarQix.given(3*5*7));
+		Assert.assertEquals("FooBar", FooBarQix.given(3*5*4));
+		Assert.assertEquals("BarQix", FooBarQix.given(5*7*2));
+		Assert.assertEquals("FooBarQix", FooBarQix.given(3*5*7*2));
 	}
 	@Test
 	public void shouldReplace3ByFoo() {
