@@ -27,6 +27,15 @@ public class FooBarQix {
 					}
 					
 				}
+				
+				String[] numbers = value.toString().split("");
+				
+				for (String number : numbers) {
+					
+					if(number.equals("3"))
+						return "Foo";
+					
+				}
 				if (isDivisible) return result;
 					return value.toString();
 		}

@@ -39,6 +39,12 @@ public class FooBarQixTest {
 		Assert.assertEquals("BarQix", FooBarQix.given(5*7));
 		Assert.assertEquals("FooBarQix", FooBarQix.given(3*5*7));
 	}
+	@Test
+	public void shouldReplace3ByFoo() {
+		new FooBarQix();
+		Assert.assertEquals("Foo", FooBarQix.given(13));
+	}
+	
 	
 	
 
