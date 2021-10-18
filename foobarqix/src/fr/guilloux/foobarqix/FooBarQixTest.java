@@ -12,5 +12,10 @@ public class FooBarQixTest {
 		Assert.assertEquals("1", new FooBarQix().given(1));
 		Assert.assertEquals("2", new FooBarQix().given(2));
 	}
+	
+	@Test
+	public void shoulReturnFooFooWhenOutisDivisibleBy3() {
+		Assert.assertEquals("FooFoo", new FooBarQix().given(3));
+	}
 
 }
