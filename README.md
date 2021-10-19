@@ -30,3 +30,8 @@ For each digit 3, 5, 7, add “Foo”, “Bar”, “Qix” in the digits order.
 51 => FooBar
 53 => BarFoo
 ```
+## Built With
+
+## Contributing
+@@ -35,4 +35,4 @@ This project is licensed under the GNU General Public License v3.0 License (cf.
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
