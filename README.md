@@ -40,6 +40,6 @@ Pull request are welcome, for major changes, please open an issue first to discu
 Please make sure to update tests as approprate
 ## Licence
 
-[MIT] GUILLOUX Rémy
+[MIT © Guilloux Rémy.]
 
 
