@@ -31,8 +31,15 @@ For each digit 3, 5, 7, add “Foo”, “Bar”, “Qix” in the digits order.
 53 => BarFoo
 ```
 ## Built With
+Java 8
+Junit 4
 
 ## Contributing
-@@ -35,4 +35,4 @@ This project is licensed under the GNU General Public License v3.0 License (cf.
+Pull request are welcome, for major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as approprate
+## Licence
+
+[MIT] GUILLOUX Rémy
 
 
