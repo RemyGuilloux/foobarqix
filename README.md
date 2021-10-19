@@ -37,7 +37,7 @@ Junit 4
 ## Contributing
 Pull request are welcome, for major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as approprate
+Please make sure to update tests as appropriate
 ## Licence
 
 [MIT guilloux rémy](https://choosealicense.com/licenses/mit/)
